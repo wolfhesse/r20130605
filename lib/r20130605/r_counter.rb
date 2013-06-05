@@ -1,7 +1,12 @@
 module R20130605
 
   class RCounter
-    attr_accessor :count
+    def self.count
+      @@count
+    end
+    def self.increment
+      @@count+=1
+    end
   end
 
 end

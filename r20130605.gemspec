@@ -11,8 +11,9 @@ Gem::Specification.new do |s|
   s.description = "Accessing Index and Databases through service access points!"
   s.homepage    = "http://github.com/wolfhesse/r20130605"
 
-  s.files      = Dir.glob('lib/**/*.rb')
-  s.test_files = Dir.glob("test/**/*.rb")
+  s.files = Dir.glob('lib/**/*.rb')
+
+  s.test_files = Dir.glob("{spec,test}/**/*.rb")
 
   s.add_development_dependency 'rspec', '~> 2.5'
 end

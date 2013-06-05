@@ -3,12 +3,12 @@ require 'r20130605'
 
 class TestR20130605 < Test::Unit::TestCase
   def test_silly_example
-    assert_equal 2+2, 5
+    assert_equal 5, 2+2
   end
 
   def test_not_so_silly_example
-    assert_equal(4,2+2)
-    end
+    assert_equal(4, 2+2)
+  end
 
 
   def test_version_string

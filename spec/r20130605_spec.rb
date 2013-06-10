@@ -15,6 +15,14 @@ describe R20130605 do
   #end
 
   it "should increment the count by 2" do
-    expect{R20130605::RCounter.increment}.to change{R20130605::RCounter.count}.by(2)
+    expect do
+      expect{R20130605::RCounter.increment}.to change{R20130605::RCounter.count}.by(2)
+    end.to raise_error
+
+    expect do
+      expect{R20130605::RCounter.increment}.to change{R20130605::RCounter.count}.by(1)
+
+    end.to_not raise_exception
   end
+
 end

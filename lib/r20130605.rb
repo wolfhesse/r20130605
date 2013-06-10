@@ -13,3 +13,4 @@ module R20130605
   end
 end
 
+require 'r20130605/r_counter'
